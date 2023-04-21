@@ -27,6 +27,7 @@ input {
     padding: 12px 15px;
     border: none;
     background-color: #eee;
+    
 }
 
 button {
@@ -72,5 +73,6 @@ button:active {
     font-size: 25px;
     margin-bottom: 5px;
     display: none;
+    
 }
   
