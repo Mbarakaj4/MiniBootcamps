@@ -7,7 +7,7 @@
 }
 
 #detalle{
-    background: #FF416C;
+    background: #6930ba;
     /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
     width: 50%;
     height: 100%;
@@ -21,6 +21,7 @@
     transform: translateY(-50%);
     overflow: hidden;
     padding: 40px;
+    font-family: 'Karla';
 }
 input {
 	width: 70%;
@@ -31,16 +32,18 @@ input {
 }
 
 button {
-  font-size: 15px;
+    font-family: 'Karla';
+    font-size: 15px;
 	font-weight: bold;
 	padding: 12px 45px;
 	border-radius: 30px;
-	background-color: #FF416C;
-	border: 1px solid #FF416C;
+	background-color: #4284ff;
+	border: 1px solid #4284ff;
 	color: #FFFFFF;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	transition: transform 20ms ease-in;
+    margin-top: 30px;
 }
 
 button:active {
@@ -75,4 +78,10 @@ button:active {
     display: none;
     
 }
-  
+
+h1{
+    font-family: 'Quicksand';
+}
+p{
+    font-family: 'Karla';
+}

@@ -29,7 +29,7 @@ function hidratacionBasal (peso){
         superficieCorporal = ((peso*4)+7)/(peso + 90)
         superficieCorporal1500 = superficieCorporal * 1500
         superficieCorporal2000 = superficieCorporal *2000
-        return(`superficie corporal 1500: ${superficieCorporal1500} \n superficie corporal 2000: ${superficieCorporal2000}`)
+        return(`<table><tr><td>Superficie corporal 1500: ${superficieCorporal1500}</td></tr><tr><td>Superficie corporal 2000: ${superficieCorporal2000}</td></tr></table>`)
     } else {
         //holiday segar
         if (peso >= 20 && peso <= 30) {
@@ -40,7 +40,7 @@ function hidratacionBasal (peso){
             volumenHidratacionHolly = valor1+valor2+valor3
             volumenMantenimiento = volumenHidratacionHolly/24
             mm2 = volumenMantenimiento*1.5
-            return ( `Volumen diario: ${volumenHidratacionHolly}n\nvolumen mantenimiento: ${volumenMantenimiento}\n\nm+m2: ${mm2}` )
+            return ( `<table><tr><td>Volumen diario: ${volumenHidratacionHolly}</td></tr><tr><td>Volumen mantenimiento: ${volumenMantenimiento}</td></tr><tr><td>M+m2: ${mm2}</td></tr></table>`)
         }
         if (peso >= 10 && peso <= 20) {
             calculo = peso - 10
@@ -49,13 +49,13 @@ function hidratacionBasal (peso){
             volumenHidratacionHolly = valor1+valor2
             volumenMantenimiento = volumenHidratacionHolly/24
             mm2 = volumenMantenimiento*1.5
-            return ( `Volumen diario: ${volumenHidratacionHolly}\n\nvolumen mantenimiento: ${volumenMantenimiento}\n\nm+m2: ${mm2}` )
+            return ( `<table><tr><td>Volumen diario: ${volumenHidratacionHolly}</td></tr><tr><td>Volumen mantenimiento: ${volumenMantenimiento}</td></tr><tr><td>M+m2: ${mm2}</td></tr></table>`)
         }
         if (peso >= 1 && peso <= 10) {
             volumenHidratacionHolly =  peso * 100
             volumenMantenimiento = volumenHidratacionHolly/24
             mm2 = volumenMantenimiento*1.5
-            return ( `Volumen diario: ${volumenHidratacionHolly}\n\nvolumen mantenimiento: ${volumenMantenimiento}\n\nm+m2: ${mm2}` )
+            return ( `<table><tr><td>Volumen diario: ${volumenHidratacionHolly}</td></tr><tr><td>Volumen mantenimiento: ${volumenMantenimiento}</td></tr><tr><td>M+m2: ${mm2}</td></tr></table>`)
         }
     }
 }
